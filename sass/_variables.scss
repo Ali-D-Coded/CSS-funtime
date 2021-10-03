@@ -1,0 +1,24 @@
+$color-primary:#0D99FF;
+$color-secondary:#0EF576;
+$body-color:#FFFFFF;
+$font-color:#FFFFFF;
+$font-weight:("regular": 400,
+  "medium": 500,
+  "bold": 700);
+@function weight($weight-name){
+  @return map-get($font-weight, $weight-name );
+}
+
+@mixin flexCenter($direction){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+@mixin theme($light:true){
+  @if $light {
+    background: darken($body-color, 90%);
+    color: $font-color;
+  }
+}

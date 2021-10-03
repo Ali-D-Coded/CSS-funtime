@@ -1,0 +1,14 @@
+{
+  "name": "html",
+  "version": "1.0.0",
+  "description": "learnig sass",
+  "main": "main.js",
+  "scripts": {
+    "sass": "sass sass/main.scss css/style.css -w"
+  },
+  "author": "Ali Afthab",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.42.1"
+  }
+}
